@@ -28,19 +28,17 @@ public class C03_CirkinSayi {
 
     */
 
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("lutfen bir sayi giriniz");
-        int sayi= scanner.nextInt();
-        for (int i = 2; i < 6; i++) {
-            while (sayi%i==0)
+        int sayi = scanner.nextInt();
+
+        for (int i = 2; i <6; i++) {
+            while(sayi%i==0)
                 sayi/=i;
-
         }
-if (sayi==1){
-
-    System.out.println( " cirkin sayidr");
-}else
-    System.out.println(sayi+" cirkin sayi degildir");
+        if (sayi==1){
+            System.out.println("cirkin sayi");
+        }else
+            System.out.println("cirkin sayi degildir");
     }
-
 }
