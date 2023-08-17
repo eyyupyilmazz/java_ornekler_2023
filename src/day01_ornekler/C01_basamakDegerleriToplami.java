@@ -19,16 +19,18 @@ public class C01_basamakDegerleriToplami {
         int sayi = scanner.nextInt();
         int tolam = 0;
         int birlerBasamagi = 0;
-        for (int i = 1; i <= sayi; i++) {
+        int basamakSayisi=(sayi+"").length();
+        for (int i = 1; i <=basamakSayisi; i++) {
             birlerBasamagi = (sayi % 10);
 
             tolam += birlerBasamagi;
             sayi /= 10;
-  }
 
 
-            System.out.println("Basamaklar toplami= " + tolam);
+
+
         }
 
-
+        System.out.println("Basamaklar toplami= " + tolam);
     }
+}
