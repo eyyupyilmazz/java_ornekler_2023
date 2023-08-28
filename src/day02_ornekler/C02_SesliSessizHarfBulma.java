@@ -36,16 +36,15 @@ public class C02_SesliSessizHarfBulma {
         Scanner scanner = new Scanner(System.in);
         System.out.println("lutfen bir harf giriniz  ");
         String str = scanner.next();
-        char harf = str.charAt(0);
-        if ((harf >= 'a' && harf <= 'z' || harf >= 'A' && harf <= 'Z') && str.length() == 1) {
+        char harf = str.toLowerCase().charAt(0);
+        if ((harf >= 'a' && harf <= 'z'  && str.length() == 1)) {
 
-            if (harf == 'a' || harf == 'e' || harf == 'i' || harf == 'o' || harf == 'u' ||
-                    harf == 'A' || harf == 'E' || harf == 'I' || harf == 'O' || harf == 'U') {
+            if (harf == 'a' || harf == 'e' || harf == 'i' || harf == 'o' || harf == 'u')
+                    {
                 System.out.println(harf + " sesli harftir");
             } else
                 System.out.println(harf + " sessiz harftir");
         }
-        else
-            System.out.println("yanlis karakter girdiniz");
+
     }
 }

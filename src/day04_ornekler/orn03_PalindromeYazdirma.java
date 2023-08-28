@@ -35,6 +35,8 @@ public class orn03_PalindromeYazdirma {
             System.out.println("kelime palindrom kelime degildir");
         }
         System.out.println(palindromCumle);// cumleyi tekrar gormek icin yazdirildi. yazmak zorunda degilsiniz
+
+        System.out.println((palindromCumle.equalsIgnoreCase(cumle)));
     }
 
 }

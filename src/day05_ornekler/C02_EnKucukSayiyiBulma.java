@@ -16,20 +16,20 @@ public class C02_EnKucukSayiyiBulma {
     */
 
 
-        int enKucuk= (enKucukSayi(12, 24, 34));
-        System.out.println(enKucuk);
+        int enKucuk = (enKucukSayi(12, 24, 34));
+        System.out.println("En kucuk sayi : "+enKucuk);
 
     }
 
     private static int enKucukSayi(int a, int b, int c) {
-int enKucuk= a;
-if (b<enKucuk){
-    enKucuk=b;
-}
-if (c<enKucuk){
-    enKucuk=c;
-}
-return enKucuk;
+        int enKucuk = a;
+        if (b < enKucuk) {
+            enKucuk = b;
+        }
+        if (c < enKucuk) {
+            enKucuk = c;
+        }
+        return enKucuk;
     }
 
 }
